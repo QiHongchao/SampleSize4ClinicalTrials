@@ -1,5 +1,10 @@
 # SampleSize4ClinicalTrials: Sample Size Calculation for the Comparison of Means or Proportions in Phase III Clinical Trials
 
+![](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
+![](https://CRAN.R-project.org/package=SampleSize4ClinicalTrials) 
+![](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
+![](http://www.rdocumentation.org/packages/SampleSize4ClinicalTrials)
+
 <img src="man/logo/logo.png" height = "200" align = "right"/>
 
 Description
