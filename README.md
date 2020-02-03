@@ -3,7 +3,7 @@
 ![](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
 ![](https://CRAN.R-project.org/package=SampleSize4ClinicalTrials) 
 ![](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
-![](http://www.rdocumentation.org/packages/SampleSize4ClinicalTrials)
+[![Download counter](http://cranlogs.r-pkg.org/badges/cvGEE)](https://cran.r-project.org/package=cvGEE) 
 
 <img src="man/logo/logo.png" height = "200" align = "right"/>
 
