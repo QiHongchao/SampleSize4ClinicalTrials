@@ -1,11 +1,4 @@
 # SampleSize4ClinicalTrials: sample size calculation for two-arm crross-sectional clinical trials
-================
-
-[![Travis-CI Build Status](https://travis-ci.org/drizopoulos/cvGEE.svg?branch=master)](https://travis-ci.org/drizopoulos/cvGEE) [![CRAN status](http://www.r-pkg.org/badges/version/cvGEE)](https://cran.r-project.org/package=cvGEE) [![](https://cranlogs.r-pkg.org/badges/grand-total/cvGEE)](https://CRAN.R-project.org/package=cvGEE) [![Download counter](http://cranlogs.r-pkg.org/badges/cvGEE)](https://cran.r-project.org/package=cvGEE) 
-[![Rdoc](http://www.rdocumentation.org/badges/version/cvGEE)](http://www.rdocumentation.org/packages/cvGEE)
-[![rpackages.io rank](https://www.rpackages.io/badge/cvGEE.svg)](https://www.rpackages.io/package/cvGEE)
-
-<img src="man/figures/logo.png" height="205" align="right"/>
 
 Description
 ------------
