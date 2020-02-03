@@ -26,7 +26,7 @@
 #' @importFrom stats qnorm
 #'
 #' @examples
-#' ##The comparison of means, a non-inferiority trial and the non-inferiority margin -0.05
+#' ##The comparison of means, a non-inferiority trial and the non-inferiority margin is -0.05
 #' ssc_meancomp(design=3L, ratio=1, alpha=0.05, power=0.8, sigma=0.01, theta=0, delta=-0.05)
 #'
 #' @references

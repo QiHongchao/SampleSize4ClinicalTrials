@@ -26,7 +26,7 @@
 #' @importFrom stats qnorm
 #'
 #' @examples
-#' ##The comparison of proportions, equivalence trial and the equivalence margin is 0.2
+#' ##The comparison of proportions, an equivalence trial and the equivalence margin is 0.2
 #' ssc_propcomp(design=4L, ratio=1, alpha = 0.05, power=0.8, p1=0.75, p2=0.80, delta = 0.2)
 #' @references
 #' Chow S, Shao J, Wang H. 2008. Sample Size Calculations in Clinical Research. 2nd Ed. Chapman & Hall/CRC Biostatistics Series.
