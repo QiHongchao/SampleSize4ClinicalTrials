@@ -1,57 +1,32 @@
-# SampleSize4ClinicalTrials: sample size calculation for two-arm crross-sectional clinical trials
+# SampleSize4ClinicalTrials: Sample Size Calculation for the Comparison of Means or Proportions in Phase III Clinical Trials
+
+<img src="man/logo/logo.png" height = "150" align = "right"/>
 
 Description
 ------------
 
-<strong>cvGEE</strong> calculates cross-validated versions of the logarithmic, quadratic and spherical scoring rules based on generalized estimating equations.
+The package **SampleSize4ClinicalTrials** aims to calculate the sample size for both the treatment and control arm in the comparison of means and proportions in phase III clinical trials.
 
-The package presumes that the GEE has been solved using the `geeglm()` function of the [**geepack**](https://cran.r-project.org/package=geepack).
+There are four categories of Phase III clinical trials according to different research goals, including (1) Testing for equality, (2) Superiority trial, (3) Non-inferiority trial, and (4) Equivalence trial. The **ssc_meancomp** and ***ssc_propcomp** function in the package allow for the calculation of sample size in the comparison of means and proprtions respectively in the above four study designs.
 
-- For `family = gaussian()` only the quadratic rule is available calculated as the squared prediction error; lower values indicate a better predictive ability.
-
-- For `family = binomial()` and dichotomous outcome data the probabilities for the two categories are calculated from the Bernoulli probability mass function. For `family = binomial()` and binomial data the probabilities for each possible response are calculated from a beta-binomial distribution with variance set equal to the variance from the corresponding quasi-likelihood behind the GEE. Likewise for `family = poisson()` the probabilities for the number of events up to a particular maximum (set using the `max_count` argument) are calculated using the negative binomial distribution with variance set equal to the variance from the corresponding quasi-likelihood behind the GEE. For these families all three scoring rules are available, with higher values in each rule indicating better predictive ability.
-
-
-Basic Use
+Example
 ------------
-
-We compare a linear and a nonlinear GEE for the dichotomized version of the serum bilirubin biomarker from the PBC dataset:
 ```r
-library("geepack")
-library("cvGEE")
-library("splines")
-library("lattice")
+library(SampleSize4ClinicalTrials)
 
-pbc2$serBilirD <- as.numeric(pbc2$serBilir > 1.2)
+##The comparison of means, a non-inferiority trial and the non-inferiority margin -0.05
+ssc_meancomp(design=3L, ratio=1, alpha=0.05, power=0.8, sigma=0.01, theta=0, delta=-0.05)
 
-gm1 <- geeglm(serBilirD ~ year * drug, 
-              family = binomial(), data = pbc2, id = id, 
-              corstr = "exchangeable")
+##The comparison of proportions, equivalence trial and the equivalence margin is 0.2
+ssc_propcomp(design=4L, ratio=1, alpha = 0.05, power=0.8, p1=0.75, p2=0.80, delta = 0.2)
 
-gm2 <- geeglm(serBilirD ~ ns(year, 3, Boundary.knots = c(0, 10)) * drug, 
-              family = binomial(), data = pbc2, id = id, 
-              corstr = "exchangeable")
-
-plot_data <- cv_gee(gm1, return_data = TRUE)
-plot_data$linear <- plot_data$.score
-plot_data$non_linear <- unlist(cv_gee(gm2))
-
-xyplot(linear + non_linear ~ year | .rule, data = plot_data, 
-       type = "smooth", auto.key = TRUE, layout = c(3, 1),
-       scales = list(y = list(relation = "free")),
-       xlab = "Follow-up time (years)", ylab = "Scoring Rules")
 ```
 
 Installation
 ------------
 
-The development version of the package can be installed from GitHub using the **devtools**
+The package can be installed from GitHub using the **devtools**
 package:
 ```r
-devtools::install_github("drizopoulos/cvGEE")
-```
-
-and with vignettes
-```r
-devtools::install_github("drizopoulos/cvGEE", build_vignettes = TRUE)
+devtools::install_github("QiHongchao/SampleSize4ClinicalTrials")
 ```
