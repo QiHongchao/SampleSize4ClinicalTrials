@@ -1,13 +1,13 @@
 # SampleSize4ClinicalTrials: Sample Size Calculation for the Comparison of Means or Proportions in Phase III Clinical Trials
 
-<img src="man/logo/logo.png" height = "150" align = "right"/>
+<img src="man/logo/logo.png" height = "200" align = "right"/>
 
 Description
 ------------
 
 The package **SampleSize4ClinicalTrials** aims to calculate the sample size for both the treatment and control arm in the comparison of means and proportions in phase III clinical trials.
 
-There are four categories of Phase III clinical trials according to different research goals, including (1) Testing for equality, (2) Superiority trial, (3) Non-inferiority trial, and (4) Equivalence trial. The **ssc_meancomp** and ***ssc_propcomp** function in the package allow for the calculation of sample size in the comparison of means and proprtions respectively in the above four study designs.
+There are four categories of Phase III clinical trials according to different research goals, including (1) Testing for equality, (2) Superiority trial, (3) Non-inferiority trial, and (4) Equivalence trial. The **ssc_meancomp** and **ssc_propcomp** function in the package allow for the calculation of sample size in the comparison of means and proprtions respectively in the above four study designs.
 
 Example
 ------------
