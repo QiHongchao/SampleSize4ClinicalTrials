@@ -1,12 +1,9 @@
 # SampleSize4ClinicalTrials: Sample Size Calculation for the Comparison of Means or Proportions in Phase III Clinical Trials
 
-[![CRAN status](http://www.r-pkg.org/badges/version/cvGEE)](https://cran.r-project.org/package=cvGEE) 
-
-[![](https://cranlogs.r-pkg.org/badges/grand-total/cvGEE)](https://CRAN.R-project.org/package=cvGEE)
-
+[![CRAN status](http://www.r-pkg.org/badges/version/SampleSize4ClinicalTrials)](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
+[![](https://cranlogs.r-pkg.org/badges/grand-total/SampleSize4ClinicalTrials)](https://CRAN.R-project.org/package=SampleSize4ClinicalTrials)
 [![Download counter](http://cranlogs.r-pkg.org/badges/SampleSize4ClinicalTrials)](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
-
-[![Rdoc](http://www.rdocumentation.org/badges/version/cvGEE)](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
+[![Rdoc](http://www.rdocumentation.org/badges/version/SampleSize4ClinicalTrials)](https://cran.r-project.org/package=SampleSize4ClinicalTrials) 
 
 <img src="man/logo/logo.png" height = "200" align = "right"/>
 
