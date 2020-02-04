@@ -14,7 +14,19 @@ The package **SampleSize4ClinicalTrials** aims to calculate the sample size for 
 
 There are four categories of Phase III clinical trials according to different research goals, including (1) Testing for equality, (2) Superiority trial, (3) Non-inferiority trial, and (4) Equivalence trial. The **ssc_meancomp** and **ssc_propcomp** function in the package allow for the calculation of sample size in the comparison of means and proprtions respectively in the above four study designs.
 
-Example
+Installation
+------------
+The package can be installed from CRAN
+```r
+install.packages("SampleSize4ClinicalTrials")
+```
+
+It can also be installed from GitHub using the **devtools** package:
+```r
+devtools::install_github("QiHongchao/SampleSize4ClinicalTrials")
+```
+
+Usage
 ------------
 ```r
 library(SampleSize4ClinicalTrials)
@@ -25,13 +37,4 @@ ssc_meancomp(design=3L, ratio=1, alpha=0.05, power=0.8, sigma=0.01, theta=0, del
 ##The comparison of proportions, equivalence trial and the equivalence margin is 0.2
 ssc_propcomp(design=4L, ratio=1, alpha = 0.05, power=0.8, p1=0.75, p2=0.80, delta = 0.2)
 
-```
-
-Installation
-------------
-
-The package can be installed from GitHub using the **devtools**
-package:
-```r
-devtools::install_github("QiHongchao/SampleSize4ClinicalTrials")
 ```
