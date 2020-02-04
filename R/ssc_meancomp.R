@@ -45,6 +45,8 @@ ssc_meancomp<-function(design = c(1L,2L,3L,4L), ratio = 1, alpha = 0.05, power =
   if (design==1L) {
     numerator <- (abs(qnorm(alpha/2)) + abs(qnorm(1- power)))^2 * sigma * (1 + 1/ratio)
   }
+  ##Note that we unify the superiority and non-inferiority trials in this version (refer to Chow et al.)
+  ##In the last version, there was no superiority margin and the non-inferiority margin was positive (refer to Yin's book).
   if (design %in% 2L:3L) {
     numerator <- (abs(qnorm(alpha)) + abs(qnorm(1 - power)))^2 * sigma * (1 + 1/ratio)
   }
