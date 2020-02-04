@@ -16,7 +16,7 @@ There are four categories of Phase III clinical trials according to different re
 
 Installation
 ------------
-The package can be installed from CRAN
+The package can be installed from CRAN:
 ```r
 install.packages("SampleSize4ClinicalTrials")
 ```
