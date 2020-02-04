@@ -38,3 +38,6 @@ ssc_meancomp(design=3L, ratio=1, alpha=0.05, power=0.8, sigma=0.01, theta=0, del
 ssc_propcomp(design=4L, ratio=1, alpha = 0.05, power=0.8, p1=0.75, p2=0.80, delta = 0.2)
 
 ```
+
+Reference
+------------
