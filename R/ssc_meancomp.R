@@ -27,7 +27,7 @@
 #'
 #' @examples
 #' ##The comparison of means, a non-inferiority trial and the non-inferiority margin is -0.05
-#' ssc_meancomp(design=3L, ratio=1, alpha=0.05, power=0.8, var=0.01, theta=0, delta=-0.05)
+#' ssc_meancomp(design = 3L, ratio = 1, alpha = 0.05, power = 0.8, var = 0.01, theta = 0, delta = -0.05)
 #'
 #' @references
 #' Chow S, Shao J, Wang H. 2008. Sample Size Calculations in Clinical Research. 2nd Ed. Chapman & Hall/CRC Biostatistics Series.
