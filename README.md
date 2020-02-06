@@ -32,10 +32,10 @@ Usage
 library(SampleSize4ClinicalTrials)
 
 ##The comparison of means, a non-inferiority trial and the non-inferiority margin is -0.05
-ssc_meancomp(design=3L, ratio=1, alpha=0.05, power=0.8, var=0.01, theta=0, delta=-0.05)
+ssc_meancomp(design = 3L, ratio = 1, alpha = 0.05, power = 0.8, var = 0.01, theta = 0, delta = -0.05)
 
 ##The comparison of proportions, equivalence trial and the equivalence margin is 0.2
-ssc_propcomp(design=4L, ratio=1, alpha = 0.05, power=0.8, p1=0.75, p2=0.80, delta = 0.2)
+ssc_propcomp(design = 4L, ratio = 1, alpha = 0.05, power = 0.8, p1 = 0.75, p2 = 0.80, delta = 0.2)
 
 ```
 
