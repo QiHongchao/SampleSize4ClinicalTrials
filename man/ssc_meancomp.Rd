@@ -4,7 +4,7 @@
 \alias{ssc_meancomp}
 \title{Sample Size Calculation for the Comparison of Means in Phase III Clinical Trials}
 \usage{
-ssc_meancomp(design, ratio, alpha, power, var, theta, delta)
+ssc_meancomp(design, ratio, alpha, power, sd, theta, delta)
 }
 \arguments{
 \item{design}{The design of the clinical trials.
@@ -23,7 +23,7 @@ ssc_meancomp(design, ratio, alpha, power, var, theta, delta)
 
 \item{power}{Statistical power of the test (1-type II error rate)}
 
-\item{var}{The variance of observed outcomes in both arms}
+\item{sd}{The standard deviation of observed outcomes in both arms}
 
 \item{theta}{The true mean difference between two arms}
 
@@ -38,7 +38,7 @@ in Phase III clinical trials.
 }
 \examples{
 ##The comparison of means, a non-inferiority trial and the non-inferiority margin is -0.05
-ssc_meancomp(design = 3L, ratio = 1, alpha = 0.05, power = 0.8, var = 0.01, theta = 0, delta = -0.05)
+ssc_meancomp(design = 3L, ratio = 1, alpha = 0.05, power = 0.8, sd = 0.1, theta = 0, delta = -0.05)
 
 }
 \references{
